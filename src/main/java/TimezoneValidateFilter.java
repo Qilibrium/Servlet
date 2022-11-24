@@ -27,7 +27,6 @@ public class TimezoneValidateFilter extends HttpFilter {
                     chain.doFilter(req, resp);
             default -> {
                 resp.setStatus(400);
-                //resp.getWriter().write("Invalid timezone");
                 resp.getWriter().close();
             }
         }
